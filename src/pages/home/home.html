@@ -1,0 +1,53 @@
+<div class="d-flex mb-4 justify-content-around">
+    <div ng-repeat="product in latestProducts" class="card" style="width: 18rem;">
+        <img ng-src="{{product.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+    </div>
+</div>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class=" carousel-item active" data-bs-interval="10000">
+            <img ng-src="https://editorial.pxcrush.net/carsales/general/editorial/ge5362897230122735782.jpg?width=1024&height=683"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Renault Clio Gold 2015</h5>
+                <p>Cijena: <b>25 000KM</b> <br></p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img ng-src="https://images.adsttc.com/media/images/5e68/48ed/b357/658e/fb00/0441/large_jpg/AM1506.jpg?1583892706"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Kuća</h5>
+                <p>Cijena: <b>225 000KM</b> <br></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img ng-src="https://autoportal.hr/wp-content/uploads/2021/10/78EA321A-30C0-4B54-BE76-A0E8B34EF35D.jpeg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Audi R8</h5>
+                <p>Cijena: <b>85 000KM</b> <br></p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
